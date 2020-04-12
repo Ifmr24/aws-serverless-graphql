@@ -5,7 +5,7 @@ const globalTypeDefs = gql`
     type Query
 `;
 
-const makeExecutablesSchemasFromModules = ({ modules }) => {
+const makeExecutableSchemaFromModules = ({ modules }) => {
     let typeDefs = [globalTypeDefs];
     let resolvers = [];
 
@@ -20,4 +20,4 @@ const makeExecutablesSchemasFromModules = ({ modules }) => {
     });
 };
 
-module.exports = { makeExecutablesSchemasFromModules };
+module.exports = { makeExecutableSchemaFromModules };
