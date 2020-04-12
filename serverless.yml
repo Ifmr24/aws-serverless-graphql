@@ -1,0 +1,17 @@
+service: aws-lambda-graphql
+
+provider:
+    name: aws
+    runtime: nodejs10.x
+
+plugins:
+    - serverless-offline
+
+functions:
+    hello:
+        handler: index.graphqlHandler
+        events:
+            - http:
+                  path: "{proxy+}"
+                  method: any
+                  cors: true
