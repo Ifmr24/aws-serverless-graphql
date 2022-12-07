@@ -14,7 +14,7 @@
         "deepmerge": "^4.2.2",
         "graphql": "^15.0.0",
         "graphql-tools": "^4.0.7",
-        "serverless": "^1.67.3"
+        "serverless": "^3.25.1"
     },
     "devDependencies": {
         "serverless-offline": "^6.1.4"
